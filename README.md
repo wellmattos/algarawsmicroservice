@@ -15,9 +15,6 @@ IBM Cloud Microservice Starter for Spring
 
 The IBM Cloud Microservice Starter in Java provides a starting point for creating Java microservice applications running on [Spring](https://spring.io/).
 
-To deploy this application to IBM Cloud using a toolchain click the **Create Toolchain** button.
-[![Create Toolchain](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](https://console.ng.bluemix.net/devops/setup/deploy/)
-
 ### Requirements
 * [Maven](https://maven.apache.org/install.html)
 * Java 8: Any compliant JVM should work.
@@ -30,11 +27,7 @@ Capabilities are provided through dependencies in the pom.xml file.
 ### Project contents
 The ports are set to the defaults of 8080 for http and 8443 for https and are exposed to the CLI in the cli-config.yml file.
 
-The project contains IBM Cloud specific files that are used to deploy the application as part of a IBM Cloud DevOps flow. The `.bluemix` directory contains files used to define the IBM Cloud toolchain and pipeline for your application. The `manifest.yml` file specifies the name of your application in IBM Cloud, the timeout value during deployment and which services to bind to.
-
-This microservice application is configured to connect to the following services :
-
-Credentials are either taken from the VCAP_SERVICES environment variable that IBM Cloud provides or from environment variables passed in by the config file `src/main/resources/localdev-config.json`.
+The `manifest.yml` file specifies the name of your application in IBM Cloud, the timeout value during deployment and which services to bind to.
 
 ### Run
 
